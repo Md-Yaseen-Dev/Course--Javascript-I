@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Global and local variables</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      // global we can use inside the function and outside the function\
+
+      var girl = "kelsey";
+
+      function split() {
+        document.write(
+          girl + " &#8594" + " accessing in the function" + "<br>"
+        );
+      }
+      split();
+      document.write(girl + " &#8594" + " outside the  function" + "<br>");
+
+      //   local variable
+
+      function local() {
+        var boy = "harry";
+
+        document.write(boy + " declared the varible inside the function </br>");
+      }
+      local();
+      document.write( "outside the variable is not working" + boy);
+    </script>
+  </body>
+</html>
