@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calling a function</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function dofirst() {
+        document.write("I am first bro !");
+      }
+
+      function dosecond() {
+        document.write("22222!"+"<br>");
+      }
+      function start() {
+        dofirst();
+        dosecond();
+      }
+      start();
+
+      // calling in the inner function
+
+        function first() {
+          document.write(" hey");
+          second();
+        }
+        function second() {
+          document.write(" whatsapp bro");
+          first();
+        }
+
+        first();
+
+    </script>
+  </body>
+</html>
