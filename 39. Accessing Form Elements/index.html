@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing forms elements</title>
+  </head>
+  <body>
+    <form name="buckysform">
+      Username: <input type="text" name="username" /> Password:
+      <input type="password" name="password" />
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      var a = document.forms[0].elements[0].name;
+
+      //-------------------------------- or----------------------------------------
+      var x = document.buckysform.elements[0].name;
+
+      // -----------------------or-------------------------------------------------
+      var y = document.buckysform.password.name;
+      //   var x = document.buckysform.length;
+      document.write(x + "<br>");
+      document.write(a + "<br>");
+
+      document.write(y);
+    </script>
+  </body>
+</html>
