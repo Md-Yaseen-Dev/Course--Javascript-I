@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple form Validation</title>
+    <script>
+        function validator(){
+            if(document.buckyforms.thebox.checked){
+                alert("Yes it is check");
+
+            }
+            else{
+                alert("No its not checked")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <form  name="buckyforms">
+        <input type="checkbox" name ="thebox" />
+        <input type="button" value ="Press me" onclick = 'validator()'>
+    </form>
+</body>
+</html>
