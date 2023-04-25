@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding methods to objects</title>
+    <script type="text/javascript">
+      function people(name, age) {
+        this.name = name;
+        this.age = age;
+        this.untilRetire = yearsLeft;
+      }
+
+      function yearsLeft() {
+        var numYears = 65 - this.age;
+        return numYears;
+      }
+      var roshan = new people("Roshan", 21);
+      var irshad = new people("Irshad", 20);
+      document.write(roshan.untilRetire() + "</br>");
+
+      document.write(irshad.untilRetire())
+    </script>
+  </head>
+  <body></body>
+</html>
